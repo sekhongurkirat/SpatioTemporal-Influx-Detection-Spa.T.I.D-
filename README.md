@@ -23,7 +23,9 @@ Output:
 
 |Time-Bin  | Hex-Code | Event-Count|
 |--|--|--|
-|YYYYMMDDHHMMSS |ABC123456789  | ### |
+|YYYYMMDDHHMMSS 1 |ABC123456789  | ### |
+|YYYYMMDDHHMMSS 2 |ABC123456789  | ### |
+|YYYYMMDDHHMMSS 3 |ABC123456789  | ### |
 
 
 ## **How can it be applied?**
