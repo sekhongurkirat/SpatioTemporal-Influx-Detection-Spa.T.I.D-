@@ -19,9 +19,11 @@ For any dataset containing columns for date-time and location coordinates, this 
 Based on these 3 parameters, the script shall output a list of "influx events" that indicates a spatiotemporal breach of the given threshold.
 
 Output:
-`Time Bin, Hex-Code, Event Count
---------- --------- ----------
-YYYYMMDDHH ABC12345678, ## `
+
+
+|Time-Bin  | Hex-Code | Event-Count|
+|--|--|--|
+|YYYYMMDDHHMMSS |ABC123456789  | ### |
 
 
 ## **How can it be applied?**
