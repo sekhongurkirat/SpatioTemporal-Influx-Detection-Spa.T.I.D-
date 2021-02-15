@@ -1,4 +1,4 @@
-## **SpatioTemporal Influx Detection (S.T.I.D)**
+## **SpatioTemporal Influx Detection (Spa.T.I.D)**
 A method to detect anomalies across space and time.
 
 
