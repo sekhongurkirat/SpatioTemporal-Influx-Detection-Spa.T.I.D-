@@ -46,3 +46,7 @@ v 0.2
    - AutoDetect temporal cycles of the dataset and set default binning
    - Set default spatial resolution at 1km hex edge,
    - Set event threshold = Average event count for each space-time bin.
+   
+v 0.3
+
+- Demonstrates functionality on streamed spatio-temporal data 
