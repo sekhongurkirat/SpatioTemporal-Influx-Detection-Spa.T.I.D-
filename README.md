@@ -37,16 +37,16 @@ Output:
 
 v 0.1
 
- - Using a sample dataset, create MVP of logic and output
+ - Create MVP script using a canonical dataset
 
 v 0.2
 
- - Generalize the MVP through a config file that specifies which columns are date, time, date-time and location coordinates
- - Create Default runs (no args)
-   - AutoDetect temporal cycles of the dataset and set default binning
-   - Set default spatial resolution at 1km hex edge,
-   - Set event threshold = Average event count for each space-time bin.
+ - Generalize the MVP script by creating a config-file where users can specify which columns contain (date, time OR date-time) AND (location coordinates)
+ - Default runs (no arguments)
+   - DEFAULT TIME BIN - AutoDetect temporal frequency of the dataset and set default TIME Bins (ex: 30 mins, 60 mins, 1 day etc)
+   - DEFAULT SPACE BIN - H3-9 resolution based on [H3 reference table](https://h3geo.org/docs/core-library/restable)
+   - DEFAULT EVENT THRESHOLD - Average out the event counts for each space-time bin.
    
 v 0.3
 
-- Demonstrates functionality on streamed spatio-temporal data 
+- Demonstrate functionality on streamed spatio-temporal data 
