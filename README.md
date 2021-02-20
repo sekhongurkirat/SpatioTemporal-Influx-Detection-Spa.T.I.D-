@@ -45,7 +45,7 @@ v 0.2
  - Default runs (no arguments)
    - DEFAULT TIME BIN - AutoDetect temporal frequency of the dataset and set default TIME Bins (ex: 30 mins, 60 mins, 1 day etc)
    - DEFAULT SPACE BIN - H3-9 resolution based on [H3 reference table](https://h3geo.org/docs/core-library/restable)
-   - DEFAULT EVENT THRESHOLD - Average out the event counts for each space-time bin.
+   - DEFAULT EVENT THRESHOLD - Impute a baseline for each space-time bin and set that as the threshold.
    
 v 0.3
 
