@@ -1,7 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
 
-# In[7]:
 
 
 import numpy as np
@@ -26,7 +23,7 @@ from datetime import datetime
 import seaborn as sns
 
 
-# In[60]:
+
 
 
 import yaml
@@ -41,7 +38,7 @@ except Exception as e:
     print('Error reading the config file')
 
 
-# In[45]:
+
 
 
 path=config['file_path']
@@ -49,14 +46,10 @@ complaint_time=config['complaint_time']
 complaint_date=config['complaint_date']
 
 
-# In[40]:
-
-
-# TRAIN_PATH = 'C:/Users/umang/Downloads/NYPD_Complaint_Data_Current__Year_To_Date_.csv'
 df = pd.read_csv(path)
 
 
-# In[46]:
+
 
 
 def spatid(df,time_bin,spatial_resolution):
@@ -99,133 +92,15 @@ def spatid(df,time_bin,spatial_resolution):
     return df_alarm,df_output
 
 
-# In[47]:
+
 
 
 df_test,df1=spatid(df,60,7)
 
 
-# In[48]:
-
-
 df_test['Incident_count'].sum()
 
-
-# In[49]:
-
-
 df_test.tail(10)
-
-
-# In[79]:
-
-
-df2=df1[df1['hex_id']=='872a10621ffffff']
-
-
-# In[80]:
-
-
-df2.head()
-
-
-# In[84]:
-
-
-percentile95=df2.Incident_count.quantile(0.978)
-percentile95
-
-
-# In[85]:
-
-
-avg=df2.Incident_count.mean()
-avg
-
-
-# In[86]:
-
-
-ax = sns.countplot(x="Incident_count",data=df2)
-ax.axvline(avg)
-ax.axvline(percentile95)
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[18]:
-
-
-df2=df1.groupby(['hex_id'])['Incident_count'].sum()
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[17]:
-
-
-type(df2)
-
-
-# In[ ]:
-
-
-fig, ax = plt.subplots(figsize=(15,7))
-data.groupby(['date','type']).count()['amount'].plot(ax=ax)
-
-
-# In[19]:
-
-
-fig, ax = plt.subplots(figsize=(15,7))
-df1.groupby(['hex_id']).count()['Incident_count'].plot(ax=ax)
-
-
-# In[ ]:
 
 
 
