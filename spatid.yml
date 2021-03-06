@@ -1,0 +1,17 @@
+file_path:
+    C:/Users/umang/Downloads/NYPD_Complaint_Data_Current__Year_To_Date_.csv     
+
+#Column Names
+
+Latitude:
+    Latitude
+    #format example: Latitude:40.62576896
+Longitude:
+    Longitude 
+    #format example: Longitude:-40.62576896
+complaint_time:
+    CMPLNT_FR_TM
+    #format example: CMPLNT_FR_TM:18:30:00 HH:MM:SS
+complaint_date:
+    CMPLNT_FR_DT    
+    #format example: CMPLNT_FR_DT:08/20/2020
